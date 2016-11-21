@@ -1,89 +1,95 @@
 body {
-	width: 960px;
-	background-image: url("../images/bg.png");
-	background-repeat: repeat;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 960px;
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    position: absolute;
+    left: 56px;
 }
+
+.main, .sidebar {
+    position: absolute;
+}
+
+header, .main, .sidebar {
+    background-color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+h2, h3 {
+    color: #4aaaa5;
+}
+
+
 
 
 
 
 /*Header Begins*/
-
-header, .main, .sidebar, footer {
-	position: absolute;
-}
-
-header, .main, .sidebar {
-	background-color: #ffffff;
-}
-
-h1, h2, h3 {
-	font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
-h1 {
-	color: #ffffff;
-	text-align: center;
-	font-size: 32px;
-	margin-top: 8px;
-}
-
-h2, h3 {
-	color: #4aaaa5;
-}
-
 header {
-	left: 0px;
-	top: 0px;
-	width: 960px;
-	height: 50px;
-	border-bottom: 2px;
-	border-style: solid;	
-	border-color: #cccccc;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px;
+    border-style: solid;    
+    border-color: #cccccc;
+    position: fixed;
+    z-index: 1;
 }
 
 .name {
-	left: 10px;
-	top: 0px;
-	position: inherit;
-	width: 250px;
-	height: 50px;
-	background-color: #4aaaa5; /*teal*/
+    left: 56px;
+    top: 0px;
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background-color: #4aaaa5; /*teal*/
 
 }
 
 .linkbar {
-	left: 680px;
-	top: 0px;
-	position: inherit;
-	width: 150px;
-	height: 50px;
-	display: -webkit-flex;
+    left: 807px;
+    top: 0px;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    display: -webkit-flex;
     display: flex;
     font-size: 13px;
 }
 
 .linkbar > a {
-	width: 47px;
-	height: 50px;
-	margin-top: 18px;
-	margin-right: 3px;
-	text-decoration: none;
-	text-align: center;
+    width: 47px;
+    height: 50px;
+    margin-top: 18px;
+    margin-right: 3px;
+    text-decoration: none;
+    text-align: center;
+    color: #777777;
 }
 
 .linkbar > a:visited {
-	color: #777777;
+    color: #777777;
 }
 
 .linkbar > a:hover {
-	color: #4aaaa5; /*teal*/;
+    color: #4aaaa5; /*teal*/;
 }
 
 .linkbar > p {
-	margin-top: 17px;
-	margin-right: 3px;
+    margin-top: 17px;
+    margin-right: 3px;
 }
 
 /*Header Ends*/
@@ -95,8 +101,17 @@ header {
 /*About Begins*/
 
 .about {
-	height: 245px;
+    height: 245px;
 }
+
+.about > img {
+    width: 129px;
+    height: 172px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 
 /*About Ends*/
 
@@ -107,7 +122,7 @@ header {
 /*Portfolio Begins*/
 
 .portfolio {
-	display: -webkit-flex;
+    display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -116,175 +131,175 @@ header {
 }
 
 .box {
-	width: 204px;
-	height: 115px;
-	-webkit-transition: background-color 1s;
-	transition: background-color 1s;
+    width: 204px;
+    height: 115px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
 .box:hover {
-	background-color: rgb(74, 170, 165);
+    background-color: rgb(74, 170, 165);
 }
 
 .box:hover img {
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 .box1, .box2, .box3 {
-	margin-top: 0px;
-	margin-bottom: 2.5px;
+    margin-top: 0px;
+    margin-bottom: 2.5px;
 }
 
 .box4, .box5, .box6 {
-	margin-top: 2.5px;
-	margin-bottom: 0px;
+    margin-top: 2.5px;
+    margin-bottom: 0px;
 }
 
 .box1, .box4 {
-	margin-right: 4px;
-	margin-left: 0px;
+    margin-right: 4px;
+    margin-left: 0px;
 }
 
 .box2, .box5 {
-	margin-left: 4px;
-	margin-right: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .box3, .box6 {
-	margin-right: 0px;
-	margin-left: 4px;
+    margin-right: 0px;
+    margin-left: 4px;
 }
 
 .box1 a, .box2 a, .box3 a, .box4 a, .box5 a, .box6 a {
-	text-decoration: none;
-	color: rgb(0,0,0);
+    text-decoration: none;
+    color: rgb(0,0,0);
 }
 
 /*label and hover effect for gallery items*/
 /*label1*/
 .box:hover .label1 {
-	z-index: 0;
+    z-index: 0;
 }
 .label1 {
-	width: 204px;
-	height: 20px;
-	position: relative;
-	top: -60px;
-	left: 0px;
-	background-color: rgba(255,255,255,.85);
-	font-family: verdana;
-	text-align: center;
-	font-size: 10px;
-	margin-bottom: 2px;
-	z-index: -1;
+    width: 204px;
+    height: 20px;
+    position: relative;
+    top: -60px;
+    left: 0px;
+    background-color: rgba(255,255,255,.85);
+    font-family: verdana;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    z-index: -1;
 }
 .label1 p {
-	line-height: 23px;
+    line-height: 23px;
 }
 
 /*label2*/
 .box:hover .label2 {
-	z-index: 0;
+    z-index: 0;
 }
 .label2 {
-	width: 204px;
-	height: 20px;
-	position: relative;
-	top: -60px;
-	left: 0px;
-	background-color: rgba(255,255,255,.85);
-	font-family: verdana;
-	text-align: center;
-	font-size: 10px;
-	margin-bottom: 2px;
-	z-index: -1;
+    width: 204px;
+    height: 20px;
+    position: relative;
+    top: -60px;
+    left: 0px;
+    background-color: rgba(255,255,255,.85);
+    font-family: verdana;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    z-index: -1;
 }
 .label2 p {
-	line-height: 23px;
+    line-height: 23px;
 }
 
 /*label3*/
 .box:hover .label3 {
-	z-index: 0;
+    z-index: 0;
 }
 .label3 {
-	width: 204px;
-	height: 20px;
-	position: relative;
-	top: -60px;
-	left: 0px;
-	background-color: rgba(255,255,255,.85);
-	font-family: verdana;
-	text-align: center;
-	font-size: 10px;
-	margin-bottom: 2px;
-	z-index: -1;
+    width: 204px;
+    height: 20px;
+    position: relative;
+    top: -60px;
+    left: 0px;
+    background-color: rgba(255,255,255,.85);
+    font-family: verdana;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    z-index: -1;
 }
 .label3 p {
-	line-height: 23px;
+    line-height: 23px;
 }
 
 /*label4*/
 .box:hover .label4 {
-	z-index: 0;
+    z-index: 0;
 }
 .label4 {
-	width: 204px;
-	height: 20px;
-	position: relative;
-	top: -60px;
-	left: 0px;
-	background-color: rgba(255,255,255,.85);
-	font-family: verdana;
-	text-align: center;
-	font-size: 10px;
-	margin-bottom: 2px;
-	z-index: -1;
+    width: 204px;
+    height: 20px;
+    position: relative;
+    top: -60px;
+    left: 0px;
+    background-color: rgba(255,255,255,.85);
+    font-family: verdana;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    z-index: -1;
 }
 .label4 p {
-	line-height: 23px;
+    line-height: 23px;
 }
 
 /*label5*/
 .box:hover .label5 {
-	z-index: 0;
+    z-index: 0;
 }
 .label5 {
-	width: 204px;
-	height: 20px;
-	position: relative;
-	top: -60px;
-	left: 0px;
-	background-color: rgba(255,255,255,.85);
-	font-family: verdana;
-	text-align: center;
-	font-size: 10px;
-	margin-bottom: 2px;
-	z-index: -1;
+    width: 204px;
+    height: 20px;
+    position: relative;
+    top: -60px;
+    left: 0px;
+    background-color: rgba(255,255,255,.85);
+    font-family: verdana;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    z-index: -1;
 }
 .label5 p {
-	line-height: 23px;
+    line-height: 23px;
 }
 
 /*label6*/
 .box:hover .label6 {
-	z-index: 0;
+    z-index: 0;
 }
 .label6 {
-	width: 204px;
-	height: 20px;
-	position: relative;
-	top: -60px;
-	left: 0px;
-	background-color: rgba(255,255,255,.85);
-	font-family: verdana;
-	text-align: center;
-	font-size: 10px;
-	margin-bottom: 2px;
-	z-index: -1;
+    width: 204px;
+    height: 20px;
+    position: relative;
+    top: -60px;
+    left: 0px;
+    background-color: rgba(255,255,255,.85);
+    font-family: verdana;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    z-index: -1;
 }
 .label6 p {
-	line-height: 23px;
+    line-height: 23px;
 }
 
 /*Portfolio Ends*/
@@ -297,7 +312,7 @@ header {
 /*Contact Form Begins*/
 
 .contact {
-	width: 50%;
+    width: 50%;
 }
 
 input[id=name], input[id=email], textarea[id=message] {
@@ -312,14 +327,14 @@ input[id=name], input[id=email], textarea[id=message] {
 }
 
 input[id=name], input[id=email] {
-	padding: 12px 20px;
+    padding: 12px 20px;
 }
 
 textarea[id=message] {
-	padding: 20px 20px;
-	height: 200px;
-	box-sizing: border-box;
-	resize: none;
+    padding: 20px 20px;
+    height: 200px;
+    box-sizing: border-box;
+    resize: none;
 }
 
 input[id=name]:focus, input[id=email]:focus, textarea[id=message]:focus  {
@@ -327,25 +342,26 @@ input[id=name]:focus, input[id=email]:focus, textarea[id=message]:focus  {
  }
 
 input[type=submit] {
-	font-family: arial;
-	color: rgb(0,0,0);
-	background-color: rgb(255,255,255);
-	border-style: solid;
-	border-width: 2px;
-	border-color: rgb(0,0,0);
-	width: 65px;
+    font-family: arial;
+    color: #777777;
+    background-color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #777777;
+    width: 65px;
     height: 35px;
-	padding: 4px 2px 2px 2px;
-	margin-bottom: 10px;
+    padding: 4px 2px 2px 2px;
+    margin-bottom: 10px;
 }
 
 input[type=submit]:hover {
-	color: #4aaaa5; /*teal*/
+    color: #4aaaa5; /*teal*/
+    border-color: #4aaaa5 /*teal*/;
 }
 
 input[type=submit]:active {
-	position: relative;
-	top: 2px;
+    position: relative;
+    top: 2px;
 }
 
 /*Contact Form Ends*/
@@ -358,37 +374,31 @@ input[type=submit]:active {
 /*Main Content Begins*/
 
 .main {
-	left: 10px;
-	top: 75px;
-	width: 628px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border: 1px solid #dddddd;
-	color: #777777;
-}
-
-.main > img {
-	width: 129px;
-	height: 172px;
-	float: left;
-	margin-right: 5px;
+    left: 0px;
+    top: 75px;
+    width: 628px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #dddddd;
+    color: #777777;
 }
 
 .main > h2 {
-	font-size: 25px;
-	margin-top: 16px;
-	margin-bottom: 16px;
+    font-size: 25px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .main > hr {
-	width: 628px;
-	border: 1px solid #777777;
-	margin-top: 0px;
-	margin-bottom: 10px;
+    width: 628px;
+    height: 0px;
+    border: 1px solid #777777;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .main > p {
-	margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 /*Main Content Ends*/
@@ -401,68 +411,68 @@ input[type=submit]:active {
 /*Sidebar Begins*/
 
 .sidebar {
-	left: 690px;
-	top: 75px;
-	width: 248px;
-	height: 100px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border: 1px solid #dddddd;
+    left: 690px;
+    top: 75px;
+    width: 248px;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #dddddd;
 }
 
 .sidebar > h3 {
-	font-size: 20px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .sidebar > hr {
-	width: 248px;
-	border: 1px solid #777777;
-	margin-bottom: 10px;
+    width: 248px;
+    border: 1px solid #777777;
+    margin-bottom: 10px;
 }
 
 .socialicons {
-	display: -webkit-flex;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
 }
 
 .socialicons img {
-	width: 35px;
-	height: 35px;
+    width: 35px;
+    height: 35px;
 }
 
 .linkedin-spacing {
-	margin-left: 25px;
-	margin-right: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .github-hl, .linkedin-hl, .stackoverflow-hl {
-	position: absolute;
-	bottom: 14px;
-	z-index: -1;
+    position: absolute;
+    bottom: 14px;
+    z-index: -1;
 }
 
 .github-hl {
-	left: 57px;
+    left: 57px;
 }
 
 .linkedin-hl {
-	left: 92px;
+    left: 92px;
 }
 
 .stackoverflow-hl {
-	left: 177px;
+    left: 177px;
 }
 
 .github:hover .github-hl, .linkedin:hover .linkedin-hl, .stackoverflow:hover .stackoverflow-hl {
-	z-index: 0;
+    z-index: 0;
 }
 
 .github > img:hover {
-	z-index: -1;
+    z-index: -1;
 }
 
 /*Sidebar Ends*/
@@ -475,18 +485,340 @@ input[type=submit]:active {
 /*Footer Begins*/
 
 footer {
-	left: 0px;
-	bottom: 0px;
-	width: 960px;
-	height: 30px;
-	line-height: 30px;
-	background-color: #666666;
-	border-top: 6px;
-	border-style: solid;	
-	border-color: #4aaaa5; /*teal*/
-	font-size: 10px;
-	text-align: center;
-	color: #efefef;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #666666;
+    border-top: 6px;
+    border-style: solid;    
+    border-color: #4aaaa5; /*teal*/
+    font-size: 10px;
+    text-align: center;
+    color: #efefef;
+    position: fixed;
 }
 
 /*Footer Ends*/
+
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .name {
+        left: 180px;
+    }
+
+    .linkbar {
+        left: 628px;
+    }
+
+
+    .main {
+        width: 380px;
+        left: 124px;
+        margin-bottom: 50px;
+    }
+
+    .main > hr {
+        width: 380px;
+    }
+
+    .sidebar {
+        left: 544px;
+        width: 180px;
+    }
+
+    .sidebar > hr {
+        width: 180px;
+    }
+
+    .github-hl {
+    left: 22px;
+    }
+
+    .linkedin-hl {
+        left: 57px;
+    }
+
+    .stackoverflow-hl {
+        left: 142px;
+    }
+
+    .about {
+        height: 325px;
+    }
+
+    .portfolio {
+        height: 1110px;
+    }
+
+    .box {
+        width: 300px;
+        height: 169px;
+    }
+
+    .box img {
+        width: 300px;
+        height: 169px;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box1 {
+        margin-top: 0px;
+        margin-bottom: 2.5px;
+    }
+
+    .box6 {
+        margin-top: 2.5px;
+        margin-bottom: 0px;
+    }
+
+    .box2, .box3, .box4, .box5 {
+        margin-top: 2.5px;
+        margin-bottom: 2.5px;
+    }
+
+    .label1, .label2, .label3, .label4, .label5, .label6 {
+        width: 300px;
+        height: 35px;
+        position: relative;
+        top: -60px;
+        left: 0px;
+        background-color: rgba(255,255,255,.85);
+        font-family: verdana;
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 2px;
+        z-index: -1;
+    }
+
+    .label1 p, .label2 p, .label3 p, .label4 p, .label5 p, .label6 p {
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+     body {
+        left: 10px;
+        overflow-x: hidden;
+     }
+
+     body::-webkit-scrollbar { 
+        display: none; 
+    }
+
+     .name {
+        left: 10px;
+    }
+
+    .linkbar {
+        left: 606px;
+    }
+
+
+    .main {
+        top: 61px;
+        width: 726px;
+        left: 0px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .main > hr {
+        width: 726px;
+    }
+
+    .sidebar {
+        /*top: 448px;
+        left: 0px;*/
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        left: 0px;
+        top: 61px;
+        width: 726px;
+        height: 200px;
+    }
+
+    .sidebar > h3 {
+        font-size: 25px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    .sidebar > hr {
+        width: 726px;
+    }
+
+    .socialicons {
+        margin-top: 50px;
+    }
+
+    .socialicons img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .github-hl {
+        left: 258px;
+        bottom: 44px;
+    }
+
+    .linkedin-hl {
+        left: 318px;
+        bottom: 44px;
+    }
+
+    .stackoverflow-hl {
+        left: 428px;
+        bottom: 44px;
+    }
+    
+    .about {
+        height: 375px;
+    }
+
+    .about > img {
+        width: 200px;
+        height: 267px;
+    }
+
+    .about p {
+        font-size: 20px;
+    }
+
+    .portfolio {
+        height: 800px;
+    }
+
+    .box {
+        width: 353px;
+        height: 199px;
+        margin: 0px;
+    }
+
+    .box img {
+        width: 353px;
+        height: 199px;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+        width: 353px;
+        height: 199px;
+    }
+    
+    .box1, .box2 {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    .box3, .box4 {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    .box5, .box6 {
+        margin-top: -10px;
+        margin-bottom: 0px;
+    }
+    
+    .label1, .label2, .label3, .label4, .label5, .label6 {
+    width: 353px;
+    height: 40px;
+    position: relative;
+    top: -60px;
+    left: 0px;
+    background-color: rgba(255,255,255,.85);
+    font-family: verdana;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 2px;
+    z-index: -1;
+    }
+
+    .label1 p, .label2 p, .label3 p, .label4 p, .label5 p, .label6 p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        left: 0px;
+    }
+
+    header {
+        position: static;
+    }
+
+    .linkbar {
+        left: 480px;
+    }
+
+    .main {
+        top: 9px;
+        width: 600px;
+        margin-left: 10px;
+    }
+
+    .main > hr {
+        width: 600px;
+    }
+
+    .sidebar {
+        top: 9px;
+        width: 600px;
+        margin-left: 10px;
+    }
+
+    .sidebar > hr {
+        width: 600px;
+    }
+
+    .github-hl {
+        left: 195px;
+    }
+
+    .linkedin-hl {
+        left: 255px;
+    }
+
+    .stackoverflow-hl {
+        left: 365px;
+    }
+
+    .portfolio {
+        height: 1318px;
+    }
+
+    .box1 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .box2, .box3, .box4, .box5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .box6 {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+}
